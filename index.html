@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Abandoned Castle</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Import Maps for Three.js via CDN -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="vignette"></div>
+    <div id="crosshair"></div>
+    
+    <div id="ui-layer">
+        <div id="title-screen">
+            <h1>THE ABANDONED CASTLE</h1>
+            <p id="start-prompt">CLICK TO ENTER</p>
+        </div>
+        <div id="interaction-text"></div>
+        <div id="dialogue-text">I SEE YOU...</div>
+        <div id="jumpscare-screen">
+            <div id="creepy-face"></div>
+        </div>
+        <div id="end-screen">
+            <h1>THE END</h1>
+            <p>Press F5 to Restart</p>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
